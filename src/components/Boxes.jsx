@@ -71,7 +71,7 @@ setTries(0)
   
   return (
     <div>
-        <div className="flex justify-center items-center">Number of Tries:{tries}</div>
+        <div className="flex justify-center items-center">Number of Selection:{tries}</div>
        { finalNumber!="" && <div className="fixed inset-0 z-50  flex justify-center items-center backdrop-blur-md">
   <div className="w-[300px] h-[200px] border border-violet-400 flex flex-col p-2 ">
     <div className="flex flex-row-reverse cursor-pointer" onClick={()=>setFinalNumber("")}>X</div>
