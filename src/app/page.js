@@ -17,11 +17,13 @@ export default function Home() {
   return (
     <main className='h-screen w-screen p-4 bg-black text-white'>
       <div className='flex flex-col gap-5 justify-center items-center border border-violet-400 mx-auto'>
-        <div className='flex justify-center items-center border border-teal-400 m-2 w-[300px] p-2'>
+        <div className='flex justify-center items-center border border-teal-400 rounded-md shadow-md shadow-teal-300 m-2 w-[300px] p-2'>
           Think of any number from below container. Select respective container which has your number three times.
         </div>
        <Boxes random={getRandomOrderNumbers()}/>
+       <div className='flex justify-center items-center'>© 2023 Created by Karthik</div>
       </div>
+     
     </main>
   );
 }

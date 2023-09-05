@@ -45,7 +45,7 @@ function Boxes({ random }) {
   //const [randomNumbers, setRandomNumbers] = useState(random);
   //console.log(randomNumbers)
   const [numbersSet, setNumbersSet] = useState(initialThreeSets(random));
-  console.log(numbersSet)
+  //console.log(numbersSet)
 const[tries, setTries]=useState(0);
 const[finalNumber,setFinalNumber]=useState("");
 
@@ -62,7 +62,7 @@ setTries(0)
 
   const onSelect=(id)=>{
 
-    console.log(id)
+    //console.log(id)
     const newNumbers=rearrangeSets(id,numbersSet);
     //setRandomNumbers(newNumbers);
     setNumbersSet(createThreeSets(newNumbers))
@@ -74,7 +74,7 @@ setTries(0)
         <div className="flex justify-center items-center">Number of Selection:{tries}</div>
        { finalNumber!="" && <div className="fixed inset-0 z-50  flex justify-center items-center backdrop-blur-md">
   <div className="w-[300px] h-[200px] border border-violet-400 flex flex-col p-2 ">
-    <div className="flex flex-row-reverse cursor-pointer" onClick={()=>setFinalNumber("")}>X</div>
+    <div className="flex flex-row-reverse cursor-pointer hover:animate-bounce" onClick={()=>setFinalNumber("")}>X</div>
     <div className="flex-1 flex flex-col justify-center items-center">
     <div>Your Number</div>
     <div

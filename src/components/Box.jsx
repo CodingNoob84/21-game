@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 function Box({ numbers, onSelect,index }) {
   const ballSize = 40; // Size of each ball in pixels
-  const boxWidth = 300; // Width of the container in pixels
+  const boxWidth = 250; // Width of the container in pixels
   const boxHeight = 300; // Height of the container in pixels
   const numBalls = numbers.length;
 
@@ -58,7 +58,7 @@ function Box({ numbers, onSelect,index }) {
 
   return (
     <div
-      className='border border-violet-400 p-5 hover:shadow-2xl hover:shadow-violet-400 hover:cursor-pointer relative'
+      className='border border-violet-400 rounded-md p-5 hover:shadow-2xl hover:shadow-violet-400 hover:cursor-pointer relative'
       style={{ width: `${boxWidth}px`, height: `${boxHeight}px` }}
       onClick={()=>onSelect(index)}
     >
