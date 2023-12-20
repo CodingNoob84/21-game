@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <Boxes random={getRandomOrderNumbers()} />
         <div className="flex justify-center items-center">
-          © 2023 Created by Kowshalya
+          © 2023 Created by Saumya Varadarajan
         </div>
       </div>
     </main>
